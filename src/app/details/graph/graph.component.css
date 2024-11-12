@@ -1,0 +1,106 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-component {
+  padding: 20px;
+}
+
+.list-component .card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin: 25px 0;
+}
+
+.list-component .card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.list-component .card .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card .top .left {
+  display: flex;
+  align-items: center;
+}
+
+.card .more {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 40px;
+}
+
+.card .more li {
+  margin-left: 25px;
+  position: relative;
+  font-size: 14px;
+}
+
+li.active::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  border: 2px solid red;
+  top: 185%;
+  left: -3px;
+}
+
+li.active a {
+  color: red;
+  font-weight: 600;
+}
+
+
+.details {
+  position: relative;
+}
+
+.details .num {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 2.4%;
+}
+
+.details .num .value {
+  padding: 4px 0;
+  font-size: 12px;
+  font-weight: 100;
+}
+.details .img {
+  text-align: center;
+  height: 250px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.stationName {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 14%;
+  transform: translateY(-5%);
+  left: 10%;
+}
+.stationName p {
+  font-size: 8px;
+  padding-right: 50px;
+}

@@ -1,0 +1,36 @@
+.home
+{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+
+}
+.main-middle-container{
+  position: absolute;
+  padding-left:65px ;
+  width: 100%;
+  background-color: #F9F5F3;
+}
+
+.cont{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Left Column (75% width) */
+.cont .left {
+  width: 75%;
+}
+
+.cont .right {
+  padding-top: 50px;
+  width: 25% !important;
+}

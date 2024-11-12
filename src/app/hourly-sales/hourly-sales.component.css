@@ -1,0 +1,51 @@
+.hourcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourcontainer h1 {
+  font-size: 20px;
+}
+
+.hourcontainer .img {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+}
+
+.values .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 50px;
+}
+
+.values .top .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom {
+  width: 100%;
+  border-radius: 5px;
+  height: 5px;
+  margin-top: 5px;
+  background-color: white;
+}
+
+.bottom .prec {
+  width: 50%;
+  background: #FF7F5C;
+  height: 5px;
+  border-radius: 5px;
+
+}
